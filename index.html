@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>DNC Coffe</title>
+</head>
+<body>
+    <header>
+        <div class="logoPage">
+        <img src="./assets/images/logo.png" alt="Coffe Logo">
+        <h1>DNC Coffe</h1>
+        </div>
+        <nav class="menuNav">
+        <h3>Home</h3>
+        <input type="button" onclick="modalLearMore(index)" value="Sobre">
+        <h3>Funcionamento</h3>  
+        </nav>
+        <div class="orderBtn"> 
+           <button>Fazer Pedido</button>
+        </div>
+    </header>
+        <div id="showModalDialog" class="modalDialog"></div>
+    <div class="bannerBody">
+        <img src="./assets/images/banner.png" alt="Coffe Banner">
+    </div>
+    <section>
+        <div class="cardsInfo">
+            <div class="cardBody">
+            <div class="mouseArea" onmouseenter="showOrderBtn(cardBody)"  onmouseleave="notShowOrderBtn(cardBody)">
+                <div class="showOrderBtn" id="showOrderBtn"></div>
+                <img src="./assets/images/image1.png" alt="Coffe 1">
+            </div>
+                <p class="cardText">Nossa loja de café se encontra em um lugar, 100% fictício, 
+                    porém caso se sinta interessado pode vir tomar um café conosco em nossa sede 
+                    em São José dos Campos.</p>
+              </div>
+              <div class="cardBody">
+                <div class="mouseArea" onmouseenter="showOrderBtn(cardBody)"  onmouseleave="notShowOrderBtn(cardBody)">
+                <div class="showOrderBtn" id="showOrderBtn"></div>
+                <img src="./assets/images/image2.png" alt="Coffe 2">
+            </div>
+                <p class="cardText">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, 
+                    uma boa conversar, bons amigos e um ambiente sem igual. Aproveite, pois Melhor que a DNC não existe</p>
+              </div>
+            <div class="cardBody">
+                <div class="mouseArea" onmouseenter="showOrderBtn(cardBody)"  onmouseleave="notShowOrderBtn(cardBody)">
+                <div class="showOrderBtn" id="showOrderBtn"></div>
+                <img src="./assets/images/image3.png" alt="Coffe 3">
+            </div>
+                <p class="cardText">Por que a DNC? Porque podem contar sempre com um serviço genuíno,
+                     uma atmosfera acolhedora e uma incrível xícara de café, torrado por especialistas 
+                     e preparado de forma enriquecedora.</p>
+              </div>
+              <div class="cardBody">
+                <div class="mouseArea" onmouseenter="showOrderBtn(cardBody)"  onmouseleave="notShowOrderBtn(cardBody)">  
+                <div class="showOrderBtn" id="showOrderBtn"></div>
+                <img src="./assets/images/image4.png" alt="Coffe 4">
+                </div>
+                <p class="cardText">A escola especialista em formar talentos, 
+                    com foco em empregabilidade, migração de carreira e aumento de performance.</p>
+              </div>
+        </div>
+    </section>
+    
+<script src="./assets/script.js"></script>
+</body>
+</html>

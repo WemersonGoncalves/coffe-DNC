@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&family=Roboto&display=swap');
+
+:root{
+    --fontColor: #000000;
+    --fontFamilyMenu: 'Inter';
+    --fontFamilyMenuBtn: 'Poppins';
+    --fontLogo: 'Helvetica';
+    --fontCardText: 'Roboto';
+    --fontModal: 'Montserrat';
+    --headerButtonBackground: #FFFFFF;
+    --headerButtonBorder:  #D1D1D1;
+    --modalBackground: #FFFFFF;
+    --hoverColor: gray;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+header .logoPage {
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+    margin-left: 20px;
+    font-family: var(--fontLogo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 23px
+}
+header .menuNav{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    font-family: var(--fontFamilyMenu) ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--fontColor);
+}
+header .menuNav input{
+    width: 60px;
+    border: none;
+    font-family: var(--fontFamilyMenu) ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+
+    background-color: var(--headerButtonBackground);
+    color: var(--fontColor);
+}
+header .menuNav input:hover{
+    color: var(--hoverColor);
+    cursor: pointer;
+}
+header .orderBtn{
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+}
+header .orderBtn button {
+    margin-right: 20px;
+    font-family: var(--fontFamilyMenuBtn);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: var(--fontColor);
+    width: 123px;
+    height: 36px;
+    right: 40px;
+    top: calc(50% - 36px/2);
+
+    background: var(--headerButtonBackground);
+    border: 1px solid var(--headerButtonBorder);
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 36px;
+}
+header .orderBtn button:hover{
+    cursor: pointer;
+    background-color: var(--hoverColor);
+}
+.bannerBody {
+    width: 100%;
+    height: 640px;
+}
+.bannerBody img {
+    width: 100%;
+    height: 600px;
+}
+.cardsInfo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.cardsInfo .cardBody{
+    width: 23%;
+}
+.cardsInfo .cardBody img {
+    width: 100%;
+    border-radius: 15px;
+}
+.cardsInfo .cardBody .cardText {
+    font-family: var(--fontCardText);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.modalDialog {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    z-index: 1;
+
+}
+.modalDialog .modalContent {
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    background: var(--headerButtonBackground);
+    border-radius: 20px;
+}
+.modalDialog .modalContent h2 {
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 5px;
+}
+.modalDialog .modalContent p{
+    padding: 50px;
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+.modalCloseBtn {
+    margin-top: 20px;
+    margin-left: 620px;
+    background-color: var(--modalBackground);
+    border: none;
+}
+.modalCloseBtn:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
+.showOrderBtn{
+    display: none;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 60px;
+    background-color: 50% var(--hoverColor);
+    z-index: 1;
+}
+.showOrderBtn button {
+    font-family: var(--fontFamilyMenuBtn);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    
+    color: var(--fontColor);
+    width: 200px;
+    height: 50px;
+    background: var(--headerButtonBackground);
+    border: 1px solid var(--headerButtonBorder);
+    border-radius: 36px;
+}
+.showOrderBtn button:hover{
+    cursor: pointer;
+    background-color: var(--hoverColor);
+    color: var(--headerButtonBackground);
+}
